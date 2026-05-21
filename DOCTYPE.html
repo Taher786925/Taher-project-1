@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Enhanced Resume Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Resume Builder</h1>
+
+<div class="container">
+
+<div class="form-section">
+<h2>Enter Details</h2>
+
+<form id="resumeForm">
+
+<label>Name</label>
+<input type="text" id="name" required>
+
+<label>Email</label>
+<input type="email" id="email" required>
+
+<label>Phone</label>
+<input type="text" id="phone" required>
+
+<label>Summary</label>
+<textarea id="summary"></textarea>
+
+<label>Skills (comma separated)</label>
+<input type="text" id="skills">
+
+<label>Experience</label>
+<textarea id="experience"></textarea>
+
+<button type="button" onclick="saveData()">Save</button>
+<button type="button" onclick="loadData()">Load</button>
+
+</form>
+
+<p id="error"></p>
+
+</div>
+
+<div class="preview-section">
+<h2>Live Preview</h2>
+
+<div class="resume">
+
+<h2 id="pname">Your Name</h2>
+<p id="pemail"></p>
+<p id="pphone"></p>
+
+<h3>Summary</h3>
+<p id="psummary"></p>
+
+<h3>Skills</h3>
+<ul id="pskills"></ul>
+
+<h3>Experience</h3>
+<p id="pexperience"></p>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
