@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Products - ProHardware</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .product-card h3 { margin: 10px 0 5px; }
+    .product-card .price { color: #f5a623; font-weight: bold; font-size: 18px; }
+    .product-card .btn { display: inline-block; margin-top: 10px; }
+    .page-title { text-align: center; padding: 40px 20px 10px; font-size: 32px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">🔧 ProHardware</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2 class="page-title">Our Products</h2>
+
+  <div class="products-grid">
+    <div class="product-card">
+      <div style="font-size:50px">🔨</div>
+      <h3>Hammer</h3>
+      <p>Heavy-duty steel hammer</p>
+      <div class="price">$12.99</div>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <div style="font-size:50px">🪛</div>
+      <h3>Screwdriver Set</h3>
+      <p>10-piece precision set</p>
+      <div class="price">$24.99</div>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <div style="font-size:50px">🔩</div>
+      <h3>Bolt & Nut Kit</h3>
+      <p>Assorted sizes, 200 pieces</p>
+      <div class="price">$9.99</div>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <div style="font-size:50px">🪚</div>
+      <h3>Hand Saw</h3>
+      <p>Sharp blade, ergonomic grip</p>
+      <div class="price">$19.99</div>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 ProHardware. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
